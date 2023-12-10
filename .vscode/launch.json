@@ -5,11 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Game",
+            "name": "Fast_weather",
             "type": "python",
             "request": "launch",
-            "module": "tic_tac_toe.main",
-            "jinja": true,
+            "module": "weather.main",
             "justMyCode": true,
             "console": "integratedTerminal",
         }
