@@ -16,9 +16,9 @@ Install dependencies
 poetry install
 ```
 
-Create a `.env` file from the `.env.template` and fill it with your creds
+### Run
 
-## Run
+Create a `.env` file from the `.env.template` and fill it with your creds
 
 Local run
 
