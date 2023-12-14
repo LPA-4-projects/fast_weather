@@ -1,5 +1,6 @@
 import httpx
 
+from fast_weather.config import load_config
 from fast_weather.schemas import CityWeather
 from fast_weather.config import OpenweatherConf
 
@@ -21,3 +22,8 @@ class WeatherClient:
 
             data = response.json()
             return CityWeather(city=city, current_temp=data['main']['temp'])
+
+
+def get_weather_client() -> WeatherClient:
+    config = load_config()
+    return WeatherClient(config.open_weather)
