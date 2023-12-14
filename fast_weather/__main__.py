@@ -1,5 +1,5 @@
 from fast_weather.config import load_config
-from fast_weather.server import create_app
+from fast_weather.app import create_app
 
 
 def main() -> None:
