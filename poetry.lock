@@ -444,6 +444,24 @@ pytest = ">=4.6"
 testing = ["fields", "hunter", "process-tests", "pytest-xdist", "six", "virtualenv"]
 
 [[package]]
+name = "pytest-httpx"
+version = "0.27.0"
+description = "Send responses to httpx."
+optional = false
+python-versions = ">=3.9"
+files = [
+    {file = "pytest_httpx-0.27.0-py3-none-any.whl", hash = "sha256:24f6f53d507ab483bea8f89b975a1a111fb613ccab4d86e570be8991776e8bcc"},
+    {file = "pytest_httpx-0.27.0.tar.gz", hash = "sha256:a33c4e8df415cc1232b3664869b6a8b8061c4c223335aca0b237cefbc01ba0eb"},
+]
+
+[package.dependencies]
+httpx = "==0.25.*"
+pytest = "==7.*"
+
+[package.extras]
+testing = ["pytest-asyncio (==0.21.*)", "pytest-cov (==4.*)"]
+
+[[package]]
 name = "pytest-testdox"
 version = "3.1.0"
 description = "A testdox format reporter for pytest"
@@ -556,4 +574,4 @@ standard = ["colorama (>=0.4)", "httptools (>=0.5.0)", "python-dotenv (>=0.13)",
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "34d170eda2875bb324780a96b6fb3a52783b81e0bbcb40d794660aaad7dd530b"
+content-hash = "32659876edbe0795b15b9e0eb30c84872596978d9edeae12f6a3f94bdc88dca9"

@@ -11,6 +11,7 @@ fastapi = "^0.104.1"
 uvicorn = "^0.24.0.post1"
 httpx = "^0.25.2"
 python-dotenv = "^1.0.0"
+pytest-httpx = "^0.27.0"
 
 
 [tool.poetry.group.test.dependencies]
@@ -23,13 +24,13 @@ pytest-testdox = "^3.1.0"
 [tool.pytest.ini_options]
 minversion = "6.0"
 addopts = """
-  --strict
+  --strict-markers
   --tb=short
   --show-capture=log
   --cov-report=term-missing:skip-covered
   --cov-report=xml:coverage.xml
   --cov-branch
-  --cov=functions
+  --cov=fast_weather
   --testdox
   --no-header
   -x
