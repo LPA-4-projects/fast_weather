@@ -24,4 +24,4 @@ def weather_client(app_config) -> WeatherClient:
 
 @pytest.fixture
 def current_temperature(faker):
-    return faker.pyfloat(min_value=-50.00, max_value=40.00)
+    return faker.pyfloat(min_value=-50, max_value=40)

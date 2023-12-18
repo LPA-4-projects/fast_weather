@@ -1,8 +1,7 @@
 import httpx
 
-from fast_weather.config import load_config
+from fast_weather.config import OpenweatherConf, load_config
 from fast_weather.schemas import CityWeather
-from fast_weather.config import OpenweatherConf
 
 
 class WeatherClient:

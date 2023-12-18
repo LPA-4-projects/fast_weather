@@ -14,8 +14,8 @@ def test__get_weather_by_city__can_return_weather(
     httpx_mock: HTTPXMock,
 ):
     httpx_mock.add_response(status_code=200, json={
-        "main": {
-            "temp": current_temperature,
+        'main': {
+            'temp': current_temperature,
         },
     })
 

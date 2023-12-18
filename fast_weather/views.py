@@ -3,13 +3,14 @@ from http import HTTPStatus
 from fastapi import APIRouter, Depends, HTTPException
 from httpx import HTTPStatusError
 
-from fast_weather.client import get_weather_client, WeatherClient
+from fast_weather.client import WeatherClient, get_weather_client
 from fast_weather.schemas import CityWeather
 
 router = APIRouter(
     prefix='/weather',
     tags=['Weather'],
 )
+
 
 @router.get('/')
 def get_weather(
@@ -27,7 +28,7 @@ def get_weather(
             )
         raise HTTPException(
             status_code=code,
-            detail='Weather server return an error'
+            detail='Weather server return an error',
         )
 
     return weather_info

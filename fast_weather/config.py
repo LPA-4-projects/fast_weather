@@ -1,8 +1,9 @@
-from typing import Any
 from os import getenv
+from typing import Any
 
 from dotenv import load_dotenv
 from pydantic import BaseModel
+
 
 class WebConf(BaseModel):
     host: str
@@ -27,7 +28,7 @@ config: dict[str, Any] = {
     'open_weather': {
         'api_key': getenv('API_KEY', ''),
         'url': getenv('OPENWEATHER_URL', ''),
-    }
+    },
 }
 
 

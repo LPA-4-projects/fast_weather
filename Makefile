@@ -6,3 +6,7 @@ run:
 
 test:
 	@pytest
+
+lint:
+	@mypy .
+	@flake8 .
