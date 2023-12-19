@@ -991,6 +991,23 @@ pytest = "==7.*"
 testing = ["pytest-asyncio (==0.21.*)", "pytest-cov (==4.*)"]
 
 [[package]]
+name = "pytest-mock"
+version = "3.12.0"
+description = "Thin-wrapper around the mock package for easier use with pytest"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "pytest-mock-3.12.0.tar.gz", hash = "sha256:31a40f038c22cad32287bb43932054451ff5583ff094bca6f675df2f8bc1a6e9"},
+    {file = "pytest_mock-3.12.0-py3-none-any.whl", hash = "sha256:0972719a7263072da3a21c7f4773069bcc7486027d7e8e1f81d98a47e701bc4f"},
+]
+
+[package.dependencies]
+pytest = ">=5.0"
+
+[package.extras]
+dev = ["pre-commit", "pytest-asyncio", "tox"]
+
+[[package]]
 name = "pytest-testdox"
 version = "3.1.0"
 description = "A testdox format reporter for pytest"
@@ -1278,4 +1295,4 @@ typing_extensions = ">=4.0,<5.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "1457930c92d1d7b8b72e0d3b05d25d854f3a88450d909d1d8372a6ec93d29fe9"
+content-hash = "3fe6095fa12a00ab16c781c22de98ca8ebc1994145f1cd5f8dbbf18eb3de9707"

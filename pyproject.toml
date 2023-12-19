@@ -25,6 +25,7 @@ pytest = "^7.4.3"
 faker = "^20.0.3"
 pytest-cov = "^4.1.0"
 pytest-testdox = "^3.1.0"
+pytest-mock = "^3.12.0"
 
 
 [tool.pytest.ini_options]
@@ -84,7 +85,7 @@ ignore = [
     "WPS404",  # Found complex default value
 ]
 per-file-ignores = [
-    "tests/*: S101, WPS116, WPS118, WPS432, WPS442"
+    "tests/*: S101, WPS116, WPS118, WPS432, WPS442, WPS430, WPS226"
 ]
 
 

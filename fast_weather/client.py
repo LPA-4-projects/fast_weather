@@ -7,9 +7,10 @@ from fast_weather.schemas import CityWeather
 class WeatherClient:
     def __init__(self, config: OpenweatherConf) -> None:
         self.config = config
+        self.client = httpx.Client()
 
     def get_weather_by_city(self, city: str) -> CityWeather:
-        with httpx.Client() as client:
+        with self.client as client:
             params = {
                 'appid': self.config.api_key,
                 'q': city,
