@@ -5,4 +5,9 @@
         ".venv": true,
         ".mypy_cache": true
     },
+    "python.testing.pytestArgs": [
+      "--no-cov", "--no-header"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
 }

@@ -8,9 +8,9 @@
             "name": "Fast_weather",
             "type": "python",
             "request": "launch",
-            "module": "weather.main",
+            "module": "fast_weather",
             "justMyCode": true,
-            "console": "integratedTerminal",
+            "console": "internalConsole",
         }
     ]
 }
